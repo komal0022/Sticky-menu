@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            padding-left: 82.7%;
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            padding: 50px 100px;
+            text-align: center;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="bc.jpeg" id="logo" alt="Loading">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <p class="text">
+            Blockchain is a powerful emerging distributed ledger technology that provides many benefits of data security, autonomy, transparency, auditability, privacy, immutability, efficiency, speed, and cost savings. It evicts central authorities and facilitates the creation of autonomous, secure, and transparent systems with the provision of trust among non-trusting entities. Many companies, consortiums, and countries have currently incorporated blockchain into their systems for its benefits after successful trials (Makhdoom et al., 2019, Hewa et al., 2020). A survey by Deloitte (Pawczuk et al., 2019) revealed that blockchain will eventually reach mainstream adoption as a large number of its projects are now in the production stage. By 2025 and 2030, the business value of blockchain was forecasted by Gartner (Furlonger and Valdes, 2017) to be over 176 billion and 3.1 trillion USD, respectively. Another report by Cisco (Cisco, 2018) also forecasted that 10% of the global GDP will be on blockchain by 2027.
+            <p>
+            In contrast to the existing surveys, this paper gives a wider review of the whole blockchain scalability studies covering both write-performance, read performance, storage solutions, and performance analysis. We also follow a systematic review process to identify the various researches and the research trend on blockchain scalability. Various databases were searched for academic and gray area papers. Based on our findings, we classify the blockchain scalability studies into three, namely scalability solutions, performance analysis, and reviews/surveys. We further classify the scalability solutions into write-performance, read-performance, and storage scalability solutions. Furthermore, we classify the write performance solutions into five groups according to the blockchain ecosystem model that we propose. We deduce future research directions on blockchain scalability and finally discuss the adoption of the blockchain technology. Our contributions are summarized as follows:</p>
+
+<p>•
+We give an overview of blockchain and its scalability issues whereby we propose a five-layer conceptual model for the blockchain ecosystem.
+</p>
+<p>•
+We conduct a systematic review process to investigate the research trend and state of the art on blockchain scalability.
+</p>
+<p>•
+We classify the various proposed blockchain scalability solutions and performance analyses.
+</p>
+<p>•
+We give a comprehensive review of the proposed blockchain scalability solutions and performance analyses.
+</p>
+<p>•
+We deduce future research directions and opportunities on blockchain scalability.
+</p>
+<p>The organization of the rest of the paper is as follows: Blockchain entails the background of blockchain, proposal of the five-layer model for the blockchain ecosystem as well as the overview of the blockchain scalability issues. Blockchain discusses the systematic review findings. Blockchain is a review of the blockchain write-performance scalability solutions. On the other hand, the review of the blockchain read-performance and storage solutions is given in blockchain. Blockchain reviews the blockchain performance analysis while blockchain discusses the future research directions. It discusses the adoption of blockchain and finally, a conclusion is given.</p>
+
+        <img src="bc2.jpg" alt="Loading">
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar=document.getElementById("menu-bar");
+
+            if(window.pageYOffset>=160){
+               navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
